@@ -16,6 +16,7 @@ AWS CloudTrail копирует каждые 5 минут архивирован
 `python3 aws_read_logs.py --help`
  
 `usage: aws_read_logs.py [-h] [--user USER] [--region REGION] [--ip IP]`
+
 `                        [--service SERVICE] [--event EVENT] [--id EVENTID]`
 
 `Read aws logs from .json.gz files`
@@ -59,7 +60,9 @@ AWS CloudTrail копирует каждые 5 минут архивирован
 ## Анализ данных в visidata
 
 Выбираем столбец для фильтрации и/или поиска данных
+
 Для поиска нажимаем  / и текст для поиска
+
 Для перехода к следующему жмем N
 
 Для фильтрации:
