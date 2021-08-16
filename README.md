@@ -14,7 +14,7 @@ AWS CloudTrail копирует каждые 5 минут архивирован
 ##Параметры запуска скрипта
  
 `python3 aws_read_logs.py --help`
-usage: aws_read_logs.py [-h] [--user USER] [--region REGION] [--ip IP]
+`usage: aws_read_logs.py [-h] [--user USER] [--region REGION] [--ip IP]
                         [--service SERVICE] [--event EVENT] [--id EVENTID]
 
 Read aws logs from .json.gz files
@@ -26,7 +26,7 @@ optional arguments:
   --ip IP            Filter by IP contains value
   --service SERVICE  Filter by aws service contains value
   --event EVENT      Filter by event name contains value
-  --id EVENTID       Filter by exact eventID and show log json
+  --id EVENTID       Filter by exact eventID and show log json`
 
 Например: `python3 aws_read_logs.py --user admin --event changepassword > table.csv`
 Для отображения всех записей запускаем без параметров  python3 aws_read_logs.py
