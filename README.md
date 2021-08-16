@@ -7,13 +7,13 @@ Python скрипт для чтения лог файлов AWS CloudTrail
 AWS CloudTrail копирует каждые 5 минут архивированные лог файлы .json.gz в указанный S3 bucket.
 Для того, чтобы посмотреть логи сначала копируем их на наш компьютер:
 
-aws s3 sync s3://<bucket-name> .
+`aws s3 sync s3://<bucket-name> .`
  
 Появится папка AWSLogs с множеством файлов
  
 ##Параметры запуска скрипта
  
-python3 aws_read_logs.py --help
+`python3 aws_read_logs.py --help`
 usage: aws_read_logs.py [-h] [--user USER] [--region REGION] [--ip IP]
                         [--service SERVICE] [--event EVENT] [--id EVENTID]
 
@@ -28,12 +28,12 @@ optional arguments:
   --event EVENT      Filter by event name contains value
   --id EVENTID       Filter by exact eventID and show log json
 
-Например: python3 aws_read_logs.py --user admin --event changepassword > table.csv
+Например: `python3 aws_read_logs.py --user admin --event changepassword > table.csv`
 Для отображения всех записей запускаем без параметров  python3 aws_read_logs.py
 
 
 При указывании конкретного eventID скрипт выводит json текст найденного события в логах.
-Например: python3 aws_read_logs.py --id=80de7756-ce24-46b6-a9c1-7e38f92f72d0
+Например: `python3 aws_read_logs.py --id=80de7756-ce24-46b6-a9c1-7e38f92f72d0`
 
 Во всех остальных случаях выводится текст в формате csv с разделителем между полями ;
 
@@ -43,9 +43,9 @@ optional arguments:
 Например открыть EXCEL, выбрать все данные, установить фильтр и дальше анализировать данные.
 
 Для просмотра в терминале устанавливаем visidata:
-pip3 install visidata
+`pip3 install visidata`
 
-vd --csv-delimiter=";" <наш файл>.csv
+`vd --csv-delimiter=";" <наш файл>.csv`
 
 ## Анализ данных в visidata
 
