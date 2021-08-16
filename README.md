@@ -14,6 +14,7 @@ AWS CloudTrail копирует каждые 5 минут архивирован
 ##Параметры запуска скрипта
  
 `python3 aws_read_logs.py --help`
+ 
 `usage: aws_read_logs.py [-h] [--user USER] [--region REGION] [--ip IP]
                         [--service SERVICE] [--event EVENT] [--id EVENTID]
 
