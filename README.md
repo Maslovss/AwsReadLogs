@@ -21,15 +21,23 @@ AWS CloudTrail копирует каждые 5 минут архивирован
 `Read aws logs from .json.gz files`
 
 `optional arguments:`
+
 `  -h, --help         show this help message and exit`
+
 `  --user USER        Filter by USER contains value`
+
  ` --region REGION    Filter by region contains value`
+ 
 `  --ip IP            Filter by IP contains value`
+
 `  --service SERVICE  Filter by aws service contains value`
+
 `  --event EVENT      Filter by event name contains value`
+
 `  --id EVENTID       Filter by exact eventID and show log json`
 
 Например: `python3 aws_read_logs.py --user admin --event changepassword > table.csv`
+
 Для отображения всех записей запускаем без параметров  python3 aws_read_logs.py
 
 
@@ -55,11 +63,15 @@ AWS CloudTrail копирует каждые 5 минут архивирован
 Для перехода к следующему жмем N
 
 Для фильтрации:
+
 Первый вариант:
+
 на необходимом столбце нажимаем shift-F, дальше стрелками вверх вниз выбираем нужное значения для фильтрации и ENTER
 
 Второй вариант:
+
 нажимаем SHIFT |  вводим выражение для поиска , выделяются строки с совпадениями
+
 нажимаем " для отображения только выделенных строк
 
 Для выхода из просмотра жмем q
