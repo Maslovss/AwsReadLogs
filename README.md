@@ -17,13 +17,13 @@ AWS CloudTrail копирует каждые 5 минут архивирован
  
 `usage: aws_read_logs.py [-h] [--user USER] [--region REGION] [--ip IP]`
 
-`                        [--service SERVICE] [--event EVENT] [--id EVENTID]` indir
+`                        [--service SERVICE] [--event EVENT] [--id EVENTID]` folder
 
 `Read aws logs from .json.gz files`
 
 `positional arguments:`
 
-`indir              Folder`
+`folder              Folder contains logs`
 
 
 `optional arguments:`
@@ -48,7 +48,7 @@ AWS CloudTrail копирует каждые 5 минут архивирован
 
 Для отображения всех записей запускаем только с одним параметром - именем папки в которой будет осуществляться поиск   
 
-python3 aws_read_logs.py .
+`python3 aws_read_logs.py .`
 
 
 При указывании конкретного eventID скрипт выводит json текст найденного события в логах.
