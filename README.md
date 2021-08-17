@@ -42,9 +42,9 @@ AWS CloudTrail копирует каждые 5 минут архивирован
 
 `  --id EVENTID       Filter by exact eventID and show log json`
 
-Например: `
+Например: 
 
-python3 aws_read_logs.py . --user admin --event changepassword > table.csv`
+`python3 aws_read_logs.py . --user admin --event changepassword > table.csv`
 
 Для отображения всех записей запускаем без параметров  python3 aws_read_logs.py
 
